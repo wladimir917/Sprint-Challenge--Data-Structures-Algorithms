@@ -16,11 +16,12 @@ def is_sorted(arr):
 
 class HeapTests(unittest.TestCase):
   def test_heap_sort_correctness(self):
-    length = randint(100, 1000)
-    input = gen_random_input(length, 1000)
+    length = randint(10, 100)
+    input = gen_random_input(length, 100)
     output = heapsort(input)
 
     self.assertEqual(len(output), length)
+    print(output)
     self.assertTrue(is_sorted(output))
 
 if __name__ == '__main__':
