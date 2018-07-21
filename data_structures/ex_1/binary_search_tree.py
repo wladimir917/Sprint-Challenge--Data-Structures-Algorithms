@@ -15,7 +15,7 @@ class BinarySearchTree:
   def breadth_first_for_each(self, cb):
     nodes = [self]
     '''
-    Implement a stack
+    Implement a queue
     '''
     while len(nodes) > 0:
       node = nodes.pop(0)
